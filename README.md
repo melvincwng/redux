@@ -30,6 +30,10 @@ Redux is generally not needed for:
 - Tight budget or tight deadlines (Redux introduces additional complexity to your code)
 - Static data (e.g. fetch data from API and display it)
 
+## Redux Architecture
+
+![Redux Architecture](./img/redux_architecture.jpg)
+
 ## Useful extension
 
 Redux Devtools is a useful chrome extension to debug redux apps.
