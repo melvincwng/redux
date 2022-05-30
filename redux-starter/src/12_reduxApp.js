@@ -44,3 +44,9 @@
  * It's job is to return the new state based on this action
  * Refer to the file reducer.js for more info
  */
+
+/**
+ * Step 4 (Set up the store)
+ * - Create a file caleld store.js
+ * - Follow the code flow over there
+ */

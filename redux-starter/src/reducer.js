@@ -5,7 +5,8 @@
 
 let lastId = 0;
 
-function reducer(state = [], action) {
+// Can use switch statements as well in the reducer function
+export default function reducer(state = [], action) {
   if (action.type === "bugAdded")
     // returning an updated state containing the previous state's bug objects AND a new bug object
     return [
@@ -23,5 +24,3 @@ function reducer(state = [], action) {
   // If we dispatch an action that doesn't exist, we dont want our system to go haywire, hence just return the current state
   return state;
 }
-
-// Can use switch statements as well in the reducer function
