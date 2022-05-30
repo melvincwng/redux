@@ -12,7 +12,7 @@ export default function reducer(state = [], action) {
     return [
       ...state,
       {
-        id: ++lastId,
+        id: ++lastId, // Difference between i++ and ++i (https://stackoverflow.com/questions/6867876/javascript-i-vs-i)
         description: action.payload.description,
         resolved: false,
       },

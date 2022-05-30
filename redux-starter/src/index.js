@@ -1,21 +1,21 @@
-// In Javascript, functions are first class citizens/objects - meaning 1,2,3
+import store from "./store";
 
-function sayHello() {
-  return "Hello World";
-}
+// can console.log(store) to see what it contains
+// store is an object that has various methods - e.g. dispatch, getState, replaceReducer, subscribe etc
+// To update the store's state, we need to dispatch an action first (e.g. user clicks a button --> an action gets dispatched)
+store.dispatch({
+  type: "bugAdded",
+  payload: {
+    description: "Bug1",
+  },
+});
 
-let fn = sayHello; // 1. We can assign a function to a variable
+store.dispatch({
+  type: "bugRemoved",
+  payload: {
+    id: 1,
+  },
+});
 
-function greet(fnMessage) {
-  console.log(fnMessage());
-}
-
-greet(sayHello); // 2. We can pass a function as an argument
-
-function sayHelloTwo() {
-  return function () {
-    return "Hello World 2";
-  };
-}
-
-sayHelloTwo(); // 3. We can return a function
+console.log(store);
+console.log(store.getState());

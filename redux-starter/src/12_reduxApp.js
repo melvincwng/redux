@@ -47,6 +47,8 @@
 
 /**
  * Step 4 (Set up the store)
- * - Create a file caleld store.js
+ * - Create a file called store.js
  * - Follow the code flow over there
+ * - Essentially import the createStore() from redux, pass a ref to the reducer function, then create a store and store it in a variable
+ * - Then export the store to index.js
  */
