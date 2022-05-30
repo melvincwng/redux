@@ -52,3 +52,7 @@
  * - Essentially import the createStore() from redux, pass a ref to the reducer function, then create a store and store it in a variable
  * - Then export the store to index.js
  */
+
+/**
+ * Step 5 (Dispatch actions using the dispatch() method from the store in index.js. This will update the state in the store)
+ */
