@@ -59,5 +59,14 @@
 
 /**
  * Step 6 (Subscribing to the store - basically "keeping track" of real time changes to the store)
- * 
+ */
+
+/**
+ * In summary:
+ * 1) We dispatch an action
+ * 2) Our store is going to call the reducer
+ * 3) The reducer will take in the current state of the store, and the action dispatched
+ * 4) Reducer will compute and give it new state
+ * 5) dispatch() method's underlying source code --> something like: newState = reducer(state, action)
+ * 6) Subscribers get notified of the newState
  */

@@ -1,4 +1,5 @@
 import store from "./store";
+import * as actions from "./actionTypes";
 
 // Subscribe to the store first, before dispatching an action
 // The inner/callback function gets called every time the state of the store changes
@@ -15,7 +16,7 @@ const unsubscribe = store.subscribe(() => {
 // store is an object that has various methods - e.g. dispatch, getState, replaceReducer, subscribe etc
 // To update the store's state, we need to dispatch an action first (e.g. user clicks a button --> an action gets dispatched)
 store.dispatch({
-  type: "bugAdded",
+  type: actions.BUG_ADDED,
   payload: {
     description: "Bug1",
   },
@@ -24,7 +25,7 @@ store.dispatch({
 // unsubscribe();
 
 store.dispatch({
-  type: "bugRemoved",
+  type: actions.BUG_REMOVED,
   payload: {
     id: 1,
   },
