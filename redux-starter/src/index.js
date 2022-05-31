@@ -1,5 +1,5 @@
 import store from "./store";
-import { bugAdded, bugRemoved } from "./actionCreators";
+import { bugAdded, bugRemoved, bugResolved } from "./actionCreators";
 
 // Subscribe to the store first, before dispatching an action
 // The inner/callback function gets called every time the state of the store changes
@@ -16,10 +16,13 @@ const unsubscribe = store.subscribe(() => {
 // store is an object that has various methods - e.g. dispatch, getState, replaceReducer, subscribe etc
 // To update the store's state, we need to dispatch an action first (e.g. user clicks a button --> an action gets dispatched)
 store.dispatch(bugAdded("Bug 1"));
+store.dispatch(bugAdded("Bug 2"));
 
 // unsubscribe();
 
 store.dispatch(bugRemoved(1));
+
+store.dispatch(bugResolved(2));
 
 console.log(store);
 console.log(store.getState());

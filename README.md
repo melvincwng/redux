@@ -1,6 +1,6 @@
-# react-redux
+# Redux
 
-Learning how to use react-redux - a state management library
+Learning how to use redux - a state management library
 
 ## What is Redux?
 

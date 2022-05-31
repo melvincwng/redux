@@ -23,7 +23,11 @@ export default function reducer(state = [], action) {
   else if (action.type === actions.BUG_REMOVED)
     // return the updated state containing the removed bug
     return state.filter((bug) => bug.id !== action.payload.id);
-
   // If we dispatch an action that doesn't exist, we dont want our system to go haywire, hence just return the current state
+  else if (action.type === actions.BUG_RESOLVED)
+    return state.map((bug) =>
+      bug.id !== action.payload.id ? bug : { ...bug, resolved: true }
+    );
+
   return state;
 }
