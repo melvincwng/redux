@@ -56,3 +56,8 @@
 /**
  * Step 5 (Dispatch actions using the dispatch() method from the store in index.js. This will update the state in the store)
  */
+
+/**
+ * Step 6 (Subscribing to the store - basically "keeping track" of real time changes to the store)
+ * 
+ */
