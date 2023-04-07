@@ -33,6 +33,7 @@ Redux is generally not needed for:
 ## Redux Architecture
 
 ![Redux Architecture](./img/redux_architecture.jpg)
+![image](https://user-images.githubusercontent.com/77479885/230533359-51969fca-b440-4ea8-a691-21791b4b1b38.png)
 
 ## Useful extension
 
