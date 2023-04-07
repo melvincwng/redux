@@ -49,3 +49,4 @@ It can show you:
 ## References
 
 Mosh's Youtube Tutorial - Redux Crash Course: https://www.youtube.com/watch?v=poQXNp9ItL4
+Redux with React (with Redux Saga explained) Youtube Tutorial: https://www.youtube.com/watch?v=kgn2mjKyy2U&t=81s
